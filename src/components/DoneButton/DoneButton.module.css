@@ -1,0 +1,14 @@
+.DoneButton {
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid black;
+    background-color: white;
+    outline: none;
+}
+
+.DoneButton:hover {
+    cursor: pointer;
+}
+
+.DoneButton:active {
+    background-color: #ccc;
+}
