@@ -8,6 +8,7 @@ const padNum = (num: number): string => {
     return str.substr(str.length - 2);
 }
 
+// Takes an amount of seconds and returns a nice string of hours:minutes:seconds
 const formatDuration = (durationInSeconds: number) => {
     const [totalMinutes, seconds] = divMod(durationInSeconds, 60);
     const [hours, minutes] = divMod(totalMinutes, 60);
