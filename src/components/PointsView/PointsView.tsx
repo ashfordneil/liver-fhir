@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './PointsView.module.css';
-import formatNumber from '../util/formatNumber';
-import formatDuration from '../util/formatDuration';
+import formatNumber from '../../util/formatNumber';
+import formatDuration from '../../util/formatDuration';
 
 interface PointsViewProps {
     moneySpent: number;
