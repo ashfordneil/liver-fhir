@@ -7,6 +7,7 @@ interface ExaminationViewProps {
     findings: string;
 };
 
+// Shows the examination options and findings
 const ExaminationView: React.FC<ExaminationViewProps> = (props) => {
     return (
         <div className={css.ExaminationView}>

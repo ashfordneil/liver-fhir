@@ -7,6 +7,7 @@ export interface ExaminationOptionProps {
     disabled?: boolean;
 }
 
+// A possible examination that a user can select
 const ExaminationOption: React.FC<ExaminationOptionProps> = (props) => {
     return (
         <button disabled={props.disabled} className={css.ExaminationOption}>{props.text}</button>
