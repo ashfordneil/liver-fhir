@@ -4,7 +4,7 @@ import css from './ExaminationOption.module.css';
 
 export interface ExaminationOptionProps {
     text: string;
-    disabled?: boolean;
+    disabled?: true;
 }
 
 // A possible examination that a user can select
