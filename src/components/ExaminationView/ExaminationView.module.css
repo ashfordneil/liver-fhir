@@ -1,0 +1,29 @@
+.ExaminationView {
+    border: 1px solid black;
+    max-width: 50rem;
+    padding: 0.5rem;
+}
+
+.Header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 0 0 0.5rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.ExaminationOptionList {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+.ExaminationOptionWrapper {
+    flex-grow: 1;
+    margin: 0.5rem;
+}
+
+.Findings {
+    max-height: 30rem;
+    overflow-y: auto;
+}
