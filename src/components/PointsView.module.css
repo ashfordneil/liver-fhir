@@ -1,0 +1,16 @@
+.PointsView {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid #777;
+    max-width: 200px;
+}
+
+.PointsView div {
+    /* border: 1px solid #000000; */
+    padding: 5px;
+}
+
+.PointsView div.Header {
+    background-color: #ccc;
+    padding-right: 2em;
+}
