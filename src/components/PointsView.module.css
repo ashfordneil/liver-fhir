@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     border: 1px solid #777;
-    max-width: 200px;
+    max-width: 12rem;
 }
 
 .PointsView div {
@@ -11,5 +11,5 @@
 
 .PointsView div.Header {
     background-color: #ccc;
-    padding-right: 2em;
+    padding-right: 2rem;
 }
