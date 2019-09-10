@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "addon-redux": "^1.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
@@ -37,12 +38,12 @@
     "@storybook/addon-links": "^5.1.11",
     "@storybook/addons": "^5.1.11",
     "@storybook/react": "^5.1.11",
-    "@types/redux": "^3.6.0",
-    "@types/storybook__react": "^4.0.2",
     "@types/node": "12.7.4",
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
     "@types/react-redux": "^7.1.2",
+    "@types/redux": "^3.6.0",
+    "@types/storybook__react": "^4.0.2",
     "loki": "^0.17.1",
     "typescript": "3.6.2"
   }
