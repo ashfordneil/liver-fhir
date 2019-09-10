@@ -1,22 +1,24 @@
 import State, { defaultState, BodyPart, Points, Observations } from './state';
-import Action, { SelectBodyPart, SpendPoints } from './actions';
+import Action, { SELECT_BODY_PART, SPEND_POINTS } from './actions';
 
 const rootReducer = (state: State = defaultState, action: Action) => {
-  if (action instanceof SelectBodyPart) {
-    return {
-      ...state,
-      body: action.part,
-    };
-  } else if (action instanceof SpendPoints) {
-    return {
-      ...state,
-      points: {
-        moneySpent: action.moneySpent + state.points.moneySpent,
-        timePassed: action.timePassed + state.points.timePassed,
-      }
-    };
-  } else {
-    return state;
+  switch (action.type) {
+    case SELECT_BODY_PART:
+      return {
+        ...state,
+        body: action.part,
+      };
+    case SPEND_POINTS:
+      return {
+        ...state,
+        points: {
+          moneySpent: action.moneySpent + state.points.moneySpent,
+          timePassed: action.timePassed + state.points.timePassed,
+        }
+      };
+    default:
+      console.warn("Unhandled action:", action);
+      return state;
   }
 }
 
