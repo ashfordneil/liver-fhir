@@ -14,7 +14,9 @@ const ExaminationView: React.FC<ExaminationViewProps> = (props) => {
             <div className={css.Header}>Examinations</div>
             <div className={css.ExaminationOptionList}>
                 {props.optionProps.map(p => (
-                    <div className={css.ExaminationOptionWrapper}><ExaminationOption text={p.text} disabled={p.disabled} /></div>
+                  <div className={css.ExaminationOptionWrapper}>
+                    <ExaminationOption {...p} />
+                  </div>
                 ))}
             </div>
             <div className={css.Header}>Findings</div>
