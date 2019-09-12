@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import css from './App.module.css';
+import { useSelector } from '../store';
 
 const App: React.FC = () => {
+  const body = useSelector(state => state.body);
   return (
     <div className={css.App} >
       <header className={css.AppHeader} >
@@ -16,7 +18,7 @@ const App: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {body}
         </a>
       </header>
     </div>
