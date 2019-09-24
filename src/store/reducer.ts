@@ -1,5 +1,5 @@
 import State, { defaultState, BodyPart, Points, Observations } from './state';
-import Action, { SELECT_BODY_PART, SPEND_POINTS } from './actions';
+import Action, { SELECT_BODY_PART, SPEND_POINTS, SELECT_EXAMINATION } from './actions';
 
 const rootReducer = (state: State = defaultState, action: Action) => {
   switch (action.type) {
@@ -16,6 +16,15 @@ const rootReducer = (state: State = defaultState, action: Action) => {
           timePassed: action.timePassed + state.points.timePassed,
         }
       };
+    case SELECT_EXAMINATION:
+      return {
+        ...state,
+        completedExaminations: state.completedExaminations.concat([action.examination]),
+        points: {
+          moneySpent: state.points.moneySpent + state.examinations[action.examination].cost.money,
+          timePassed: state.points.timePassed + state.examinations[action.examination].cost.time
+        }
+      }
     default:
       console.warn("Unhandled action:", action);
       return state;

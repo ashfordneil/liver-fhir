@@ -10,8 +10,5 @@ import ExaminationView from './ExaminationView';
 storiesOf('ExaminationView', module)
   .addDecorator(withRedux({}, []))
   .add('render', () => (
-    <ExaminationView optionProps={[
-      {text: "A", moneySpent: 5, timePassed: 12 },
-      {text: "B", moneySpent: 10, timePassed: 3 }
-    ]} findings="Lorem ipsum" />
+    <ExaminationView />
   ));

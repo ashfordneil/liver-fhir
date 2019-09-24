@@ -1,4 +1,4 @@
-import { BodyPart } from './state';
+import { BodyPart, ExaminationId } from './state';
 
 export const SELECT_BODY_PART = 'SELECT_BODY_PART';
 export const SelectBodyPart = (part: BodyPart) => ({
@@ -13,9 +13,16 @@ export const SpendPoints = (moneySpent: number, timePassed: number) => ({
   timePassed,
 });
 
+export const SELECT_EXAMINATION = 'SELECT_EXAMINATION';
+export const SelectExamination = (examination: ExaminationId) => ({
+  type: SELECT_EXAMINATION as typeof SELECT_EXAMINATION,
+  examination
+})
+
 type Action =
   | ReturnType<typeof SelectBodyPart>
   | ReturnType<typeof SpendPoints>
+  | ReturnType<typeof SelectExamination>
   ;
 
 export default Action;

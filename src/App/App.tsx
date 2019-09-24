@@ -17,10 +17,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className={css.ExaminationContainer}>
-        <ExaminationView optionProps={[
-          {text: "A", moneySpent: 5, timePassed: 12 },
-          {text: "B", moneySpent: 10, timePassed: 3 }
-        ]} findings="Lorem ipsum"></ExaminationView>
+        <ExaminationView></ExaminationView>
       </div>
       <div className={css.DoneButtonContainer}>
         <DoneButton onClick={() => null}></DoneButton>
