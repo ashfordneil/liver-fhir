@@ -11,14 +11,14 @@ export interface Points {
   timePassed: number;
 }
 
-export interface Observations {
+export interface Observation {
   text: string;
 }
 
 interface State {
   body: BodyPart;
   points: Points;
-  observations: Observations[];
+  observations: Observation[];
 }
 
 export const defaultState: State = {
