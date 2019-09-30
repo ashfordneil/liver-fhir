@@ -1,3 +1,3 @@
-.Main {
-  width: 100%;
+.PersonSVG path:hover {
+  fill: blue !important;
 }

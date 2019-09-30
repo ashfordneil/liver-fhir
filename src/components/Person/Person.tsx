@@ -1,14 +1,32 @@
 import React from 'react';
 import css from './Person.module.css';
+import {ReactComponent as PersonSVG} from './human.svg';
+import {useDispatch} from "react-redux";
+import {BodyPart} from "../../store/state";
+import {SelectBodyPart} from "../../store/actions";
 
 // Render a clickable person
 const Person: React.FC = (props) => {
-  return (
-    <svg viewBox="0 0 5 10" className={css.Main} >
-      <circle cx="2.5" cy="1.2" r="1.2" />
-      <rect x="1" y="3" height="5" width="3" />
-    </svg>
-  );
+    const dispatch = useDispatch();
+    const clickHandler = (e: MouseEvent) => {
+        if (!e.target) return;
+        // @ts-ignore
+        const id = e.target.id;
+        const lookup: {[key: string]: BodyPart} = {
+            "head": "Head",
+            "chest": "Chest",
+            "abdomen": "Abdomen"
+        };
+        const bodyPart = lookup[id];
+        if (bodyPart == null) {
+            return;
+        }
+        const event = SelectBodyPart(bodyPart);
+        dispatch(event);
+    };
+    return (
+        <PersonSVG className={css.PersonSVG} onClick={clickHandler as any} />
+    );
 };
 
 export default Person;
