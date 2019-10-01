@@ -3,7 +3,7 @@ import {BodyPart, Examination, ExaminationId} from "../store/state";
 
 const bodyPartCodeLookup: {[key: string]: BodyPart} = {
     "181261002": "Pelvis",  // Actually rectum
-    "181469002": "Hands",  // It is "skin" but that's too broad
+    "181469002": "Arms",  // It is "skin" but that's too broad
     "258335003": "Head",  // Actually brain
     "243928005": "Hands",  // Actually whole body
     "181608004": "Hands",
