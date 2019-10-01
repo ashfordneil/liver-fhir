@@ -10,19 +10,26 @@ const Person: React.FC = (props) => {
     const dispatch = useDispatch();
     const clickHandler = (e: MouseEvent) => {
         if (!e.target) return;
-        // @ts-ignore
-        const id = e.target.id;
         const lookup: {[key: string]: BodyPart} = {
             "head": "Head",
+            "eyes": "Eyes",
+            "nose": "Nose",
             "chest": "Chest",
-            "abdomen": "Abdomen"
+            "abdomen": "Abdomen",
+            "arms": "Arms",
+            "hands": "Hands",
+            "pelvis": "Pelvis",
+            "legs": "Legs",
+            "feet": "Feet"
         };
-        const bodyPart = lookup[id];
-        if (bodyPart == null) {
-            return;
+        let target: HTMLElement | null = e.target as any;
+        while (target != null && lookup[target.id] == null) {
+            target = target.parentElement;
         }
-        const event = SelectBodyPart(bodyPart);
-        dispatch(event);
+        if (target != null) {
+            const event = SelectBodyPart(lookup[target.id]);
+            dispatch(event);
+        }
     };
     return (
         <PersonSVG className={css.PersonSVG} onClick={clickHandler as any} />

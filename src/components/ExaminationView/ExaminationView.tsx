@@ -2,8 +2,10 @@ import React from 'react';
 import css from './ExaminationView.module.css';
 import { useSelector } from '../../store';
 import {default as ExaminationOption, ExaminationOptionProps} from '../ExaminationOption/ExaminationOption';
+import {BodyPart} from "../../store/state";
 
 interface ExaminationViewProps {
+    selectedBodyPart: BodyPart;
     optionProps: ExaminationOptionProps[];
     findings: string[];
 };
@@ -12,7 +14,7 @@ interface ExaminationViewProps {
 const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
     return (
         <div className={css.ExaminationView}>
-            <div className={css.Header}>Examinations</div>
+            <div className={css.Header}>{props.selectedBodyPart} - Examinations</div>
             <div className={css.ExaminationOptionList}>
                 {props.optionProps.map(p => (
                   <div className={css.ExaminationOptionWrapper}>
@@ -29,6 +31,7 @@ const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
 }
 
 const ExaminationView: React.FC = () => {
+    const selectedBodyPart = useSelector(state => state.body);
     const examinations = useSelector(state => state.examinations);
     const completedExaminations = useSelector(state => state.completedExaminations);
     const examinationOptions = useSelector(state => state.examinationOptions[state.body]);
@@ -39,7 +42,7 @@ const ExaminationView: React.FC = () => {
         disabled: completedExaminations.indexOf(e) !== -1,
         examinationId: e,
     }));
-    return <ExaminationViewRaw optionProps={optionProps} findings={findings}></ExaminationViewRaw>
+    return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings}></ExaminationViewRaw>
 }
 
 export default ExaminationView;

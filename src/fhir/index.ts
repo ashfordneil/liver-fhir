@@ -18,8 +18,15 @@ export const getExaminations = async () => {
     const examinations: {[key in ExaminationId]: Examination} = {};
     const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
         Head: [],
+        Eyes: [],
+        Nose: [],
         Chest: [],
-        Abdomen: []
+        Abdomen: [],
+        Arms: [],
+        Hands: [],
+        Pelvis: [],
+        Legs: [],
+        Feet: []
     };
     entriesWithBody.forEach((e) => {
         const id = e.resource.id;
