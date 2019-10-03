@@ -22,7 +22,7 @@ const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
             </div>
             <div className={css.Header}>Findings</div>
             <div className={css.Findings}>
-                {props.findings.map((f, i) => <div key={I}>{f}</div>)}
+                {props.findings.map((f, i) => <div key={i}>{f}</div>)}
             </div>
         </div>
     )
