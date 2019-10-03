@@ -1,7 +1,14 @@
 export type BodyPart =
   | "Head"
+  | "Eyes"
+  | "Nose"
   | "Chest"
   | "Abdomen"
+  | "Arms"
+  | "Hands"
+  | "Pelvis"
+  | "Legs"
+  | "Feet"
   ;
 
 export interface Points {
@@ -54,9 +61,16 @@ export const defaultState: State = {
   },
   completedExaminations: [],
   examinationOptions: {
-    Head: ["abc"],
+    Head: [],
+    Eyes: [],
+    Nose: [],
     Chest: [],
-    Abdomen: []
+    Abdomen: [],
+    Arms: [],
+    Hands: [],
+    Pelvis: [],
+    Legs: [],
+    Feet: []
   },
 };
 

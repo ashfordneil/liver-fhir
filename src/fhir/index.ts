@@ -2,8 +2,8 @@ import blah from './hardcoded.json';
 import {BodyPart, Examination, ExaminationId} from "../store/state";
 
 const bodyPartCodeLookup: {[key: string]: BodyPart} = {
-    "181261002": "Abdomen",  // Actually rectum
-    "181469002": "Chest",  // It is "skin" but that's too broad
+    "181261002": "Pelvis",  // Actually rectum
+    "181469002": "Arms",  // It is "skin" but that's too broad
     "258335003": "Head",  // Actually brain
     "243928005": "Chest",  // Actually whole body
     "181608004": "Chest",
@@ -18,8 +18,15 @@ export const getExaminations = async () => {
     const examinations: {[key in ExaminationId]: Examination} = {};
     const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
         Head: [],
+        Eyes: [],
+        Nose: [],
         Chest: [],
-        Abdomen: []
+        Abdomen: [],
+        Arms: [],
+        Hands: [],
+        Pelvis: [],
+        Legs: [],
+        Feet: []
     };
     entriesWithBody.forEach((e) => {
         const id = e.resource.id;
