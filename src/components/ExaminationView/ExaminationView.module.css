@@ -13,14 +13,15 @@
 }
 
 .ExaminationOptionList {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-auto-rows: max-content;
     margin: 0.5rem;
 }
 
 .ExaminationOptionWrapper {
-    flex-grow: 1;
-    margin: 0.5rem;
+  height: 100%;
 }
 
 .Findings {
