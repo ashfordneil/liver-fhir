@@ -36,7 +36,7 @@ const ExaminationView: React.FC = () => {
     const findings = completedExaminations.map(e => examinations[e].result.text);
     const optionProps = examinationOptions.map(e => ({
         text: examinations[e].name,
-        disabled: completedExaminations.indexOf(e) !== -1,
+        disabled: completedExaminations.indexOf(e) !== -1 || undefined,
         examinationId: e,
     }));
     return <ExaminationViewRaw optionProps={optionProps} findings={findings}></ExaminationViewRaw>

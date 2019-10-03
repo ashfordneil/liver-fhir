@@ -1,4 +1,4 @@
-import State, { defaultState, BodyPart, Points, Observations } from './state';
+import State, { defaultState, BodyPart, Points, Observation } from './state';
 import Action, { SELECT_BODY_PART, SPEND_POINTS, SELECT_EXAMINATION } from './actions';
 
 const rootReducer = (state: State = defaultState, action: Action) => {
