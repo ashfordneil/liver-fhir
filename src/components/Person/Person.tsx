@@ -8,7 +8,7 @@ import {SelectBodyPart} from "../../store/actions";
 // Render a clickable person
 const Person: React.FC = (props) => {
     const dispatch = useDispatch();
-    const clickHandler = (e: MouseEvent) => {
+    const clickHandler = (e: React.MouseEvent<SVGElement>) => {
         if (!e.target) return;
         const lookup: {[key: string]: BodyPart} = {
             "head": "Head",
@@ -22,7 +22,7 @@ const Person: React.FC = (props) => {
             "legs": "Legs",
             "feet": "Feet"
         };
-        let target: HTMLElement | null = e.target as any;
+        let target = e.target as HTMLElement | null;
         while (target != null && lookup[target.id] == null) {
             target = target.parentElement;
         }
@@ -32,7 +32,7 @@ const Person: React.FC = (props) => {
         }
     };
     return (
-        <PersonSVG className={css.PersonSVG} onClick={clickHandler as any} />
+        <PersonSVG className={css.PersonSVG} onClick={clickHandler} />
     );
 };
 
