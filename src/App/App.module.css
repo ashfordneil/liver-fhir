@@ -7,7 +7,7 @@
 
   display: grid;
   grid-template-areas: "person examinations examinations" "points filler done";
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 2fr auto;
   grid-template-rows: 1fr auto;
   grid-gap: 1rem;
 
@@ -16,6 +16,8 @@
 
 .PersonContainer {
   grid-area: person;
+  max-height: 100%;
+  min-height: 0;
 }
 
 .ExaminationContainer {
