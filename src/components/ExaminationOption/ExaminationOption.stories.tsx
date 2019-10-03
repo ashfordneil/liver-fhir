@@ -12,4 +12,4 @@ storiesOf('ExaminationOption', module)
   .add('not disabled', () => (
     <ExaminationOption text="A" examinationId={"1"} />
   ))
-  .add('disabled', () => <ExaminationOption text="B" disabled={true} examinationId={"1"} />);
+  .add('disabled', () => <ExaminationOption text="B" disabled examinationId={"1"} />);

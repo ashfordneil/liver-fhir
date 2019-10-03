@@ -1,5 +1,5 @@
 import State, { defaultState, BodyPart, Points, Observation } from './state';
-import Action, {SELECT_BODY_PART, SPEND_POINTS, SELECT_EXAMINATION, INIT_EXAMINATIONS} from './actions';
+import Action, { SELECT_BODY_PART, SPEND_POINTS, SELECT_EXAMINATION, INIT_EXAMINATIONS } from './actions';
 
 const rootReducer = (state: State = defaultState, action: Action) => {
   switch (action.type) {
