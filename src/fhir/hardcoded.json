@@ -1,0 +1,560 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>O/E - rectal examination - NAD<a name='mm'/></div>"
+        },
+        "id": "cf-1569519810389",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "274765004",
+              "system": "http://snomed.info/sct",
+              "display": "O/E - rectal examination - NAD"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "181261002",
+              "system": "http://snomed.info/sct",
+              "display": "Entire rectum"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "410006001",
+              "system": "http://snomed.info/sct",
+              "display": "Digital rectal examination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No Bruits<a name='mm'/></div>"
+        },
+        "id": "cf-1569518984826",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "70466008",
+              "system": "http://snomed.info/sct",
+              "display": "No Bruits"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "37931006",
+              "system": "http://snomed.info/sct",
+              "display": "Auscultation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Caput Medusae<a name='mm'/></div>"
+        },
+        "id": "cf-1569517921120",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "163055009",
+              "system": "http://snomed.info/sct",
+              "display": "Prominent veins visible around umbilicus (caput medusa)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "163055009",
+              "system": "http://snomed.info/sct"
+            }
+          ],
+          "text": "Prominent veins visible around umbilicus (caput medusa)"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>rash<a name='mm'/></div>"
+        },
+        "id": "cf-1569516567563",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "271906008",
+              "system": "http://snomed.info/sct",
+              "display": "O/E - rash absent"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "181469002",
+              "system": "http://snomed.info/sct",
+              "display": "Entire Skin"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "271906008",
+              "system": "http://snomed.info/sct",
+              "display": "Entire Skin"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Oriented Person Time and Place<a name='mm'/></div>"
+        },
+        "id": "cf-1569515908580",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "84728005",
+              "system": "http://snomed.info/sct",
+              "display": "Oriented to person, time and place"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "258335003",
+              "system": "http://snomed.info/sct",
+              "display": "Entire brain (cognition)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "84728005",
+              "system": "http://snomed.info/sct",
+              "display": "Neurological Examination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Pallor<a name='mm'/></div>"
+        },
+        "id": "cf-1569514719911",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "162738007",
+              "system": "http://snomed.info/sct",
+              "display": "O/E - colour pale"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "243928005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire Body"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "271906008",
+              "system": "http://snomed.info/sct",
+              "display": "Examination Finding"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Slightly overweight<a name='mm'/></div>"
+        },
+        "id": "cf-1569512543169",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "268915006",
+              "system": "http://snomed.info/sct",
+              "display": "O/E - weight 10-20% over ideal"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "243928005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire body"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "311886005",
+              "system": "http://snomed.info/sct",
+              "display": "Visual perception"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Cacchexia<a name='mm'/></div>"
+        },
+        "id": "cf-1569513312876",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "238108007",
+              "system": "http://snomed.info/sct",
+              "display": "Cachexia"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "243928005",
+              "system": "http://snomed.info/sct",
+              "display": "Whole body"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "271906008",
+              "system": "http://snomed.info/sct",
+              "display": "Examination Finding (Visual)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Mentally Alert<a name='mm'/></div>"
+        },
+        "id": "cf-1569515249328",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "248234008",
+              "system": "http://snomed.info/sct",
+              "display": "Mentally Alert"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "258335003",
+              "system": "http://snomed.info/sct",
+              "display": "Entire brain (cognition)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "84728005",
+              "system": "http://snomed.info/sct",
+              "display": "Neurological Examination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Afebrile<a name='mm'/></div>"
+        },
+        "id": "cf-1569516193443",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "86699002",
+              "system": "http://snomed.info/sct",
+              "display": "Apyrexial (Afebrile)"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "243928005",
+              "system": "http://snomed.info/sct",
+              "display": "Entire body"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "410188000",
+              "system": "http://snomed.info/sct",
+              "display": "Taking patient vital signs assessment"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Multiple Spider Naevii<a name='mm'/></div>"
+        },
+        "id": "cf-1569516976728",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "195382003",
+              "system": "http://snomed.info/sct",
+              "display": "(Multiple) Spider Naevii"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "181608004",
+              "system": "http://snomed.info/sct",
+              "display": "Entire Chest"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "271906008",
+              "system": "http://snomed.info/sct",
+              "display": "Examination Finding"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Normal Bowel sounds<a name='mm'/></div>"
+        },
+        "id": "cf-1569518664749",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "61539000",
+              "system": "http://snomed.info/sct",
+              "display": "Normal Bowel Sounds"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "37931006",
+              "system": "http://snomed.info/sct",
+              "display": "Auscultation"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "302553009",
+              "system": "http://snomed.info/sct",
+              "display": "Entire Abdomen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns='http://www.w3.org/1999/xhtml'>O/E Rectum - Prostate - NAD<a name='mm'/></div>"
+        },
+        "id": "cf-1569519273446",
+        "subject": {
+          "reference": "Patient/2578285"
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "code": "4424530008",
+              "system": "http://snomed.info/sct",
+              "display": "O/E Rectum - Prostate - NAD"
+            }
+          ]
+        },
+        "bodySite": {
+          "coding": [
+            {
+              "code": "181261002",
+              "system": "http://snomed.info/sct",
+              "display": "Entire rectum"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "410006001",
+              "system": "http://snomed.info/sct",
+              "display": "Digital rectal examination"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2578285",
+        "meta": {
+          "extension": [
+            {
+              "url": "http://hapifhir.io/fhir/StructureDefinition/resource-meta-source",
+              "valueUri": "#311c706fdaaba15d"
+            }
+          ],
+          "versionId": "1",
+          "lastUpdated": "2019-09-25T02:48:28.852+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Charles Burnside</div>"
+        },
+        "identifier": [
+          {
+            "system": "http://clinfhir.com/fhir/NamingSystem/identifier",
+            "value": "UQSOM-CBL-GI4MC"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "text": "Charles Burnside",
+            "family": "Burnside",
+            "given": [
+              "Charles"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1966-01-01"
+      }
+    }
+  ],
+  "id": "cf-1569511612518"
+}

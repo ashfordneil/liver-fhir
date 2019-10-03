@@ -10,6 +10,6 @@ import ExaminationOption from './ExaminationOption';
 storiesOf('ExaminationOption', module)
   .addDecorator(withRedux({}, []))
   .add('not disabled', () => (
-    <ExaminationOption text="A" examinationId="id1" />
+    <ExaminationOption text="A" examinationId={"1"} />
   ))
-  .add('disabled', () => <ExaminationOption text="B" examinationId="id2" disabled />);
+  .add('disabled', () => <ExaminationOption text="B" disabled examinationId={"1"} />);
