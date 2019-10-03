@@ -6,7 +6,7 @@ import { ExaminationId } from '../../store/state';
 
 export interface ExaminationOptionProps {
   text: string;
-  disabled?: boolean;
+  disabled?: true;
   examinationId: ExaminationId;
 }
 
