@@ -1,37 +1,31 @@
 .App {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+
+  display: grid;
+  grid-template-areas: "person examinations examinations" "points filler done";
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-gap: 1rem;
+
+  padding: 2rem;
 }
 
 .PersonContainer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.InnerPersonContainer {
-  width: 25%;
+  grid-area: person;
 }
 
 .ExaminationContainer {
-  flex: 1;
+  grid-area: examinations;
 }
 
 .DoneButtonContainer {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  width: 10rem;
-  height: 5rem;
+  grid-area: done;
 }
 
 .PointsContainer {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  grid-area: points;
 }

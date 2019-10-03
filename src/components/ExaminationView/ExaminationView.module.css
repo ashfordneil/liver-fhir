@@ -1,6 +1,6 @@
 .ExaminationView {
     border: 1px solid black;
-    max-width: 50rem;
+    min-width: fit-content;
     padding: 0.5rem;
 }
 

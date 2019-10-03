@@ -24,9 +24,7 @@ const App: React.FC = () => {
   return (
     <div className={css.App}>
       <div className={css.PersonContainer}>
-        <div className={css.InnerPersonContainer}>
-          <Person></Person>
-        </div>
+        <Person></Person>
       </div>
       <div className={css.ExaminationContainer}>
         <ExaminationView></ExaminationView>

@@ -1,3 +1,7 @@
 .PersonSVG g g:hover path, .PersonSVG g path:hover {
   fill: blue !important;
 }
+
+.PersonSVG {
+  max-height: 100%;
+}
