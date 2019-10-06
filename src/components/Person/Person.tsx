@@ -32,7 +32,9 @@ const Person: React.FC = (props) => {
         }
     };
     return (
+      <div className={css.Wrapper}>
         <PersonSVG className={css.PersonSVG} onClick={clickHandler} />
+      </div>
     );
 };
 

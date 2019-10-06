@@ -16,8 +16,8 @@ const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
         <div className={css.ExaminationView}>
             <div className={css.Header}>{props.selectedBodyPart} - Examinations</div>
             <div className={css.ExaminationOptionList}>
-                {props.optionProps.map(p => (
-                  <div className={css.ExaminationOptionWrapper}>
+                {props.optionProps.map((p, i) => (
+                  <div key={i} className={css.ExaminationOptionWrapper}>
                     <ExaminationOption {...p} />
                   </div>
                 ))}
@@ -41,6 +41,7 @@ const ExaminationView: React.FC = () => {
         text: examinations[e].name,
         disabled: completedExaminations.indexOf(e) !== -1 || undefined,
         examinationId: e,
+        cost: examinations[e].cost,
     }));
     return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings}></ExaminationViewRaw>
 }
