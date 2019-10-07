@@ -5,7 +5,7 @@ const bodyPartCodeLookup: {[key: string]: BodyPart} = {
     "181261002": "Pelvis",  // Actually rectum
     "181469002": "Arms",  // It is "skin" but that's too broad
     "258335003": "Head",  // Actually brain
-    "243928005": "Chest",  // Actually whole body
+    "243928005": "EntireBody",  // Actually whole body
     "181608004": "Chest",
     "302553009": "Abdomen"
 };
@@ -26,7 +26,8 @@ export const getExaminations = async () => {
         Hands: [],
         Pelvis: [],
         Legs: [],
-        Feet: []
+        Feet: [],
+        EntireBody: []
     };
     entriesWithBody.forEach((e) => {
         const id = e.resource.id;

@@ -7,3 +7,7 @@
 .PersonSVG g g:hover path, .PersonSVG g path:hover {
   fill: blue !important;
 }
+
+.PersonSVG rect:hover {
+  fill: blue !important;
+}
