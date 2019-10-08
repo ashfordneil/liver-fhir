@@ -15,6 +15,20 @@ export const getExaminations = async () => {
     const entriesWithBody = blah.entry.filter(
         (e) => e.resource.bodySite && bodyPartCodeLookup[e.resource.bodySite.coding[0].code] && e.resource.method && e.resource.code
     );
+    // To reach the deadline we will group bodypart / method combos under the same ID
+    const hackLookup: {[key in BodyPart]: {[key: string]: ExaminationId}} = {
+        Head: {},
+        Eyes: {},
+        Nose: {},
+        Chest: {},
+        Abdomen: {},
+        Arms: {},
+        Hands: {},
+        Pelvis: {},
+        Legs: {},
+        Feet: {},
+        EntireBody: {},
+    };
     const examinations: {[key in ExaminationId]: Examination} = {};
     const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
         Head: [],
@@ -30,20 +44,25 @@ export const getExaminations = async () => {
         EntireBody: []
     };
     entriesWithBody.forEach((e) => {
-        const id = e.resource.id;
+        const method = e.resource.method!.coding[0].display;
         const bodyPart = bodyPartCodeLookup[e.resource.bodySite!.coding[0].code];
-        examinations[id] = {
-            name: e.resource.method!.coding[0].display,
-            result: {
-                text: e.resource.code!.coding[0].display
-            },
-            cost: {
-                // TODO - have them in data
-                money: 10,
-                time: 60
-            }
-        };
-        examinationOptions[bodyPart].push(id);
+        if (hackLookup[bodyPart][method] == null) {
+            hackLookup[bodyPart][method] = e.resource.id;
+            examinations[e.resource.id] = {
+                name: e.resource.method!.coding[0].display,
+                result: {
+                    text: ""
+                },
+                cost: {
+                    // TODO - have them in data
+                    money: 10,
+                    time: 60
+                }
+            };
+            examinationOptions[bodyPart].push(e.resource.id);
+        }
+        const id = hackLookup[bodyPart][method];
+        examinations[id].result.text += `\n${e.resource.code!.coding[0].display}`;
     });
 
     return {examinations, examinationOptions};
