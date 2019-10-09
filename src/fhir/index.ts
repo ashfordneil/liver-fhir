@@ -15,6 +15,8 @@ const bodyPartCodeLookup: {[key: string]: BodyPart} = {
 const getTime = (examination: any): number | undefined => {
   const methodCode = examination.resource.method.coding[0].code;
   switch (methodCode) {
+    case "410006001": // digital examination of the rectum
+      return 180;
     case "37931006": // auscultation
       return 60;
     case "32750006": // visual examination
@@ -24,9 +26,7 @@ const getTime = (examination: any): number | undefined => {
     case "410188000": // taking patient vital signs assessment
       return 120;
     case "84728005": // neurological examination
-    case "410006001": // digital rectal examination
-      console.warn("Snomed METHOD code that did not have an associated time value: ", methodCode);
-      return undefined;
+      return 15;
     default:
       throw new Error(`${methodCode} unrecognised snomed code`);
   }
