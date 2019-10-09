@@ -9,7 +9,7 @@ export type BodyPart =
   | "Pelvis"
   | "Legs"
   | "Feet"
-  | "EntireBody"
+  | "Entire Body"
   ;
 
 export interface Points {
@@ -47,7 +47,7 @@ interface State {
 }
 
 export const defaultState: State = {
-  body: "EntireBody",
+  body: "Entire Body",
   points: {
     moneySpent: 0,
     timePassed: 0,
@@ -65,7 +65,7 @@ export const defaultState: State = {
     Pelvis: [],
     Legs: [],
     Feet: [],
-    EntireBody: [],
+    "Entire Body": [],
   },
 };
 

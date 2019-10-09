@@ -5,7 +5,7 @@ const bodyPartCodeLookup: {[key: string]: BodyPart} = {
     "181261002": "Pelvis",  // Actually rectum
     "181469002": "Arms",  // It is "skin" but that's too broad
     "258335003": "Head",  // Actually brain
-    "243928005": "EntireBody",  // Actually whole body
+    "243928005": "Entire Body",  // Actually whole body
     "181608004": "Chest",
     "302553009": "Abdomen"
 };
@@ -27,7 +27,7 @@ export const getExaminations = async () => {
         Pelvis: {},
         Legs: {},
         Feet: {},
-        EntireBody: {},
+        "Entire Body": {},
     };
     const examinations: {[key in ExaminationId]: Examination[]} = {};
     const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
@@ -41,7 +41,7 @@ export const getExaminations = async () => {
         Pelvis: [],
         Legs: [],
         Feet: [],
-        EntireBody: []
+        "Entire Body": []
     };
     entriesWithBody.forEach((e) => {
         const method = e.resource.method!.coding[0].display;

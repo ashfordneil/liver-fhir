@@ -13,7 +13,7 @@ const Person: React.FC = (props) => {
         const lookup: {[key: string]: BodyPart} = {
             "head": "Head",
             "eyes": "Eyes",
-            "entire body": "EntireBody",
+            "entire body": "Entire Body",
             "nose": "Nose",
             "chest": "Chest",
             "abdomen": "Abdomen",
