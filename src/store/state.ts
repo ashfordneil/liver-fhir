@@ -37,7 +37,7 @@ interface State {
   body: BodyPart;
   points: Points;
   // A lookup of examination id to the examination
-  examinations: {[key in ExaminationId]: Examination};
+  examinations: {[key in ExaminationId]: Examination[]};
   // A list of completed examination ids, to be used to lookup the examinations
   completedExaminations: ExaminationId[];
   // A lookup of bodypart to possible examination ids
@@ -45,20 +45,20 @@ interface State {
 }
 
 export const defaultState: State = {
-  body: "Head",
+  body: "EntireBody",
   points: {
     moneySpent: 0,
     timePassed: 0,
   },
   examinations: {
-    "abc": {
+    "abc": [{
       name: "ABC",
       cost: {
         money: 100,
         time: 120
       },
       result: {text: "Blah"}
-    }
+    }]
   },
   completedExaminations: [],
   examinationOptions: {

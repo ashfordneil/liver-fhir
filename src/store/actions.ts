@@ -21,7 +21,7 @@ export const SelectExamination = (examination: ExaminationId) => ({
 
 export const INIT_EXAMINATIONS = 'INIT_EXAMINATIONS';
 export const InitExaminations = (
-    examinations: {[key in ExaminationId]: Examination}, examinationOptions: {[key in BodyPart]: ExaminationId[]}
+    examinations: {[key in ExaminationId]: Examination[]}, examinationOptions: {[key in BodyPart]: ExaminationId[]}
     ) => ({
   type: INIT_EXAMINATIONS as typeof INIT_EXAMINATIONS,
   examinations,

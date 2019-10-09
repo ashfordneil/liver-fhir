@@ -36,12 +36,12 @@ const ExaminationView: React.FC = () => {
     const completedExaminations = useSelector(state => state.completedExaminations);
     const examinationOptions = useSelector(state => state.examinationOptions[state.body]);
 
-    const findings = completedExaminations.map(e => examinations[e].result.text);
+    const findings = completedExaminations.flatMap(e => examinations[e]).map(ex => ex.result.text);
     const optionProps = examinationOptions.map(e => ({
-        text: examinations[e].name,
+        text: examinations[e][0].name,
         disabled: completedExaminations.indexOf(e) !== -1 || undefined,
         examinationId: e,
-        cost: examinations[e].cost,
+        cost: examinations[e][0].cost,
     }));
     return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings}></ExaminationViewRaw>
 }

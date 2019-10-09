@@ -21,8 +21,8 @@ const rootReducer = (state: State = defaultState, action: Action) => {
         ...state,
         completedExaminations: state.completedExaminations.concat([action.examination]),
         points: {
-          moneySpent: state.points.moneySpent + state.examinations[action.examination].cost.money,
-          timePassed: state.points.timePassed + state.examinations[action.examination].cost.time
+          moneySpent: state.points.moneySpent + state.examinations[action.examination][0].cost.money,
+          timePassed: state.points.timePassed + state.examinations[action.examination][0].cost.time
         }
       };
     case INIT_EXAMINATIONS:
