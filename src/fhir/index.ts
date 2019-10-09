@@ -62,7 +62,9 @@ export const getExaminations = async () => {
                   // TODO - have them in data
                   money: 10,
                   time: 60
-              }
+              },
+              bodyPart,
+              method,
         });
     });
 

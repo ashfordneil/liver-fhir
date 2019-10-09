@@ -27,10 +27,12 @@ export type ExaminationId = string;
 export interface Examination {
   name: string;
   cost: {
-    money: number,
-    time: number
+    money: number;
+    time: number;
   };
   result: Observation;
+  bodyPart: string;
+  method: string;
 }
 
 interface State {
@@ -50,16 +52,7 @@ export const defaultState: State = {
     moneySpent: 0,
     timePassed: 0,
   },
-  examinations: {
-    "abc": [{
-      name: "ABC",
-      cost: {
-        money: 100,
-        time: 120
-      },
-      result: {text: "Blah"}
-    }]
-  },
+  examinations: {},
   completedExaminations: [],
   examinationOptions: {
     Head: [],

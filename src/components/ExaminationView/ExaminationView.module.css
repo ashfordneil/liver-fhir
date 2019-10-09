@@ -27,4 +27,20 @@
 .Findings {
     max-height: 30rem;
     overflow-y: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 15rem);
+    grid-gap: 1rem;
+}
+
+.Finding {
+  border: 1px solid #aaa;
+}
+
+.Finding__Metadata {
+  text-align: center;
+}
+
+.Finding__Result {
+  text-align: center;
 }
