@@ -122,7 +122,7 @@
         "code": {
           "coding": [
             {
-              "code": "271906008",
+              "code": "139920007",
               "system": "http://snomed.info/sct",
               "display": "O/E - rash absent"
             }
@@ -140,9 +140,9 @@
         "method": {
           "coding": [
             {
-              "code": "271906008",
+              "code": "32750006",
               "system": "http://snomed.info/sct",
-              "display": "Entire Skin"
+              "display": "Visual examination"
             }
           ]
         }
@@ -163,7 +163,7 @@
         "code": {
           "coding": [
             {
-              "code": "84728005",
+              "code": "426224004",
               "system": "http://snomed.info/sct",
               "display": "Oriented to person, time and place"
             }
