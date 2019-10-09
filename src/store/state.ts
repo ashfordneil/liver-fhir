@@ -9,6 +9,7 @@ export type BodyPart =
   | "Pelvis"
   | "Legs"
   | "Feet"
+  | "Entire Body"
   ;
 
 export interface Points {
@@ -26,17 +27,19 @@ export type ExaminationId = string;
 export interface Examination {
   name: string;
   cost: {
-    money: number,
-    time: number
+    money: number;
+    time: number;
   };
   result: Observation;
+  bodyPart: string;
+  method: string;
 }
 
 interface State {
   body: BodyPart;
   points: Points;
   // A lookup of examination id to the examination
-  examinations: {[key in ExaminationId]: Examination};
+  examinations: {[key in ExaminationId]: Examination[]};
   // A list of completed examination ids, to be used to lookup the examinations
   completedExaminations: ExaminationId[];
   // A lookup of bodypart to possible examination ids
@@ -44,21 +47,12 @@ interface State {
 }
 
 export const defaultState: State = {
-  body: "Head",
+  body: "Entire Body",
   points: {
     moneySpent: 0,
     timePassed: 0,
   },
-  examinations: {
-    "abc": {
-      name: "ABC",
-      cost: {
-        money: 100,
-        time: 120
-      },
-      result: {text: "Blah"}
-    }
-  },
+  examinations: {},
   completedExaminations: [],
   examinationOptions: {
     Head: [],
@@ -70,7 +64,8 @@ export const defaultState: State = {
     Hands: [],
     Pelvis: [],
     Legs: [],
-    Feet: []
+    Feet: [],
+    "Entire Body": [],
   },
 };
 

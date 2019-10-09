@@ -5,7 +5,7 @@ const bodyPartCodeLookup: {[key: string]: BodyPart} = {
     "181261002": "Pelvis",  // Actually rectum
     "181469002": "Arms",  // It is "skin" but that's too broad
     "258335003": "Head",  // Actually brain
-    "243928005": "Chest",  // Actually whole body
+    "243928005": "Entire Body",  // Actually whole body
     "181608004": "Chest",
     "302553009": "Abdomen"
 };
@@ -37,7 +37,21 @@ export const getExaminations = async () => {
     const entriesWithBody = blah.entry.filter(
         (e) => e.resource.bodySite && bodyPartCodeLookup[e.resource.bodySite.coding[0].code] && e.resource.method && e.resource.code
     );
-    const examinations: {[key in ExaminationId]: Examination} = {};
+    // To reach the deadline we will group bodypart / method combos under the same ID
+    const hackLookup: {[key in BodyPart]: {[key: string]: ExaminationId}} = {
+        Head: {},
+        Eyes: {},
+        Nose: {},
+        Chest: {},
+        Abdomen: {},
+        Arms: {},
+        Hands: {},
+        Pelvis: {},
+        Legs: {},
+        Feet: {},
+        "Entire Body": {},
+    };
+    const examinations: {[key in ExaminationId]: Examination[]} = {};
     const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
         Head: [],
         Eyes: [],
@@ -48,24 +62,32 @@ export const getExaminations = async () => {
         Hands: [],
         Pelvis: [],
         Legs: [],
-        Feet: []
+        Feet: [],
+        "Entire Body": []
     };
     entriesWithBody.forEach((e) => {
-        const id = e.resource.id;
+        const method = e.resource.method!.coding[0].display;
         const bodyPart = bodyPartCodeLookup[e.resource.bodySite!.coding[0].code];
-        examinations[id] = {
-            name: e.resource.method!.coding[0].display,
-            result: {
-                text: e.resource.code!.coding[0].display
-            },
-            cost: {
-                money: 0,
-              // TODO - ensure that we don't have unknown method times
-                time: getTime(e) || 60,
-            }
-        };
-        examinationOptions[bodyPart].push(id);
+        if (hackLookup[bodyPart][method] == null) {
+            hackLookup[bodyPart][method] = e.resource.id;
+            examinations[e.resource.id] = [];
+            examinationOptions[bodyPart].push(e.resource.id);
+        }
+
+        const id = hackLookup[bodyPart][method];
+        examinations[id].push({
+              name: e.resource.method!.coding[0].display,
+              result: {
+                  text: e.resource.code!.coding[0].display,
+              },
+              cost: {
+                  money: 0,
+                  time: getTime(e) || 60
+              },
+              bodyPart,
+              method,
+        });
     });
 
-    return {examinations, examinationOptions};
+  return {examinations, examinationOptions};
 };

@@ -2,8 +2,19 @@
   display: flex;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.Wrapper svg {
+  width: auto;
+  height: 600px;
 }
 
 .PersonSVG g g:hover path, .PersonSVG g path:hover {
+  fill: blue !important;
+}
+
+.PersonSVG rect:hover {
   fill: blue !important;
 }
