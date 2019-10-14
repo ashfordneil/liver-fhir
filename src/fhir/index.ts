@@ -2,12 +2,17 @@ import blah from './hardcoded.json';
 import {BodyPart, Examination, ExaminationId} from "../store/state";
 
 const bodyPartCodeLookup: {[key: string]: BodyPart} = {
-    "181261002": "Pelvis",  // Actually rectum
-    "181469002": "Arms",  // It is "skin" but that's too broad
-    "258335003": "Head",  // Actually brain
-    "243928005": "Entire Body",  // Actually whole body
-    "181608004": "Chest",
-    "302553009": "Abdomen"
+    "243990009": "Pelvis",
+    "182245002": "Arms",
+    "302548004": "Head",
+    "243928005": "Entire Body",
+    "302551006": "Chest",
+    "302553009": "Abdomen",
+    "24448605": "Eyes",
+    "20190630": "Nose",  // Mouth
+    "302539009": "Hands",
+    "182281004": "Legs",
+    "302545001": "Feet"
 };
 
 // figure out how long an examination takes, looking up snomed codes in a small
@@ -15,18 +20,30 @@ const bodyPartCodeLookup: {[key: string]: BodyPart} = {
 const getTime = (examination: any): number | undefined => {
   const methodCode = examination.resource.method.coding[0].code;
   switch (methodCode) {
-    case "410006001": // digital examination of the rectum
-      return 180;
-    case "37931006": // auscultation
-      return 60;
-    case "32750006": // visual examination
-    case "311886005": // visual perception
-    case "271906008": // examination finding (this is bad coding we should fix it)
-      return 30;
+    // case "410006001": // digital examination of the rectum
+    //   return 180;
+    // case "37931006": // auscultation
+    //   return 60;
+    // case "32750006": // visual examination
+    // case "311886005": // visual perception
+    // case "271906008": // examination finding (this is bad coding we should fix it)
+    //   return 30;
     case "410188000": // taking patient vital signs assessment
       return 120;
-    case "84728005": // neurological examination
-      return 15;
+    // case "84728005": // neurological examination
+    //   return 15;
+    case "129449000": // functional assessment
+      return 30;
+    case "129433002": // inspection
+      return 30;
+    case "129434008": // palpation
+      return 60;
+    case "129435009": // percussion
+      return 30;
+    case "129436005": // ascultation
+      return 60;
+    case "18427003": // mental status
+      return 30;
     default:
       throw new Error(`${methodCode} unrecognised snomed code`);
   }

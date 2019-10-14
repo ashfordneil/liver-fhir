@@ -1,8 +1,17 @@
 import json
 import sys
+import random
+import string
 
 import pandas as pd
 
+
+EXAMPLE_SHEET = "Example Patient"
+NAD_SHEET = "NAD Patient"
+
+
+def random_id():
+    return ''.join(random.choice(string.ascii_lowercase) for i in range(10))
 
 def generate_bundle():
     return dict(
@@ -22,34 +31,35 @@ def generate_observation(row: dict) -> dict:
                 status="generated",
                 div=f"<div xmlns='http://www.w3.org/1999/xhtml'>{finding_text}</div>"
             ),
-            id="TODO",
+            id=random_id(),
             subject=dict(
                 reference="Patient/blah"
             ),
             status="registered",
             code=dict(
-                coding=dict(
+                coding=[dict(
                     code=str(int(row['Finding'])),
                     system="http://snomed.info/sct",
                     display=finding_text
-                )
+                )]
             ),
             bodySite=dict(
-                coding=dict(
+                coding=[dict(
                     code=str(int(row['BodyRegion'])),
                     system="http://snomed.info/sct",
                     display=row['BR Description']
-                )
+                )]
             ),
             method=dict(
-                coding=dict(
+                coding=[dict(
                     code=str(int(row['QualifierValue'])),
                     system="http://snomed.info/sct",
                     display=row['QV Description']
-                )
+                )]
             ),
         )
     )
+
 
 def convert_df_to_json(df: pd.DataFrame) -> str:
     bundle = generate_bundle()
@@ -58,10 +68,18 @@ def convert_df_to_json(df: pd.DataFrame) -> str:
     
     return bundle
 
+
+def combine_dfs(nad_df, example_df) -> pd.DataFrame:
+    example_values = example_df[['BodyRegion', 'QualifierValue']].drop_duplicates().apply(tuple, axis=1)
+    other_nad_df = nad_df[~nad_df[['BodyRegion', 'QualifierValue']].apply(tuple, axis=1).isin(example_values)]
+    return pd.concat([example_df, other_nad_df], axis=0)
+
 if __name__ == "__main__":
-    df = pd.read_excel(sys.argv[1], sys.argv[2])
-    df = df.dropna(how='any', axis=0)
-    print(df)
+    nad_df = pd.read_excel(sys.argv[1], NAD_SHEET)
+    nad_df = nad_df.dropna(how='any', axis=0)
+    example_df = pd.read_excel(sys.argv[1], EXAMPLE_SHEET)
+    example_df = example_df.dropna(how='any', axis=0)
+    df = combine_dfs(nad_df, example_df)
     json_text = json.dumps(convert_df_to_json(df), indent=4)
     with open('out.json', 'w') as f:
         f.write(json_text)
