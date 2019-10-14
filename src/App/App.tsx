@@ -29,9 +29,9 @@ const App: React.FC = () => {
       <div className={css.ExaminationContainer}>
         <ExaminationView></ExaminationView>
       </div>
-      <div className={css.DoneButtonContainer}>
+      {/* <div className={css.DoneButtonContainer}>
         <DoneButton onClick={() => null}></DoneButton>
-      </div>
+      </div> */}
       <div className={css.PointsContainer}>
         <PointsView></PointsView>
       </div>

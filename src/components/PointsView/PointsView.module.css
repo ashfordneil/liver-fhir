@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: auto 1fr;
     border: 1px solid #777;
-    max-width: 12rem;
+    max-width: 20rem;
+    font-size: 25pt;
 }
 
 .PointsView div {
