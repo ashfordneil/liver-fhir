@@ -7,9 +7,9 @@
                 "resourceType": "Observation",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Oriented to person, time and place</div>"
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>alert</div>"
                 },
-                "id": "pgvhohgiaw",
+                "id": "yaegsfnbqr",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -19,1114 +19,7 @@
                         {
                             "code": "426224004",
                             "system": "http://snomed.info/sct",
-                            "display": "Oriented to person, time and place"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129449000",
-                            "system": "http://snomed.info/sct",
-                            "display": "Functional assessment - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Oriented to person, time and place</div>"
-                },
-                "id": "ocuahoykyy",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "426224004",
-                            "system": "http://snomed.info/sct",
-                            "display": "Oriented to person, time and place"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129449000",
-                            "system": "http://snomed.info/sct",
-                            "display": "Functional assessment - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Afebrile</div>"
-                },
-                "id": "ohpsijzgia",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "86699002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Afebrile"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "410188000",
-                            "system": "http://snomed.info/sct",
-                            "display": "Assess vital signs"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Normal vital signs</div>"
-                },
-                "id": "zqwuucfyuh",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "72970002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Normal vital signs"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "410188000",
-                            "system": "http://snomed.info/sct",
-                            "display": "Assess vital signs"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Overweight</div>"
-                },
-                "id": "kyyyeoppwr",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "238131007",
-                            "system": "http://snomed.info/sct",
-                            "display": "Overweight"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Reduction of bulk of muscle </div>"
-                },
-                "id": "gmhvtllpca",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "300043006",
-                            "system": "http://snomed.info/sct",
-                            "display": "Reduction of bulk of muscle "
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Body pale</div>"
-                },
-                "id": "cxhfvpqqam",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "274643008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Body pale"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Skin normal color </div>"
-                },
-                "id": "kyatikffrl",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "297952003",
-                            "system": "http://snomed.info/sct",
-                            "display": "Skin normal color "
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - rash absent\u00a0</div>"
-                },
-                "id": "yojzskgpym",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "162693008",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - rash absent\u00a0"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Spider nevus</div>"
-                },
-                "id": "xdpoarxhuy",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "195382003",
-                            "system": "http://snomed.info/sct",
-                            "display": "Spider nevus"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302551006",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire thorax"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Abdominal tenderness absent</div>"
-                },
-                "id": "hfdmwhdedb",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "297125009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Abdominal tenderness absent"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - abdominal mass not palpated</div>"
-                },
-                "id": "xadjjpmeaz",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "163279004",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - abdominal mass not palpated"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Liver normal</div>"
-                },
-                "id": "piplfaxauv",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "300337001",
-                            "system": "http://snomed.info/sct",
-                            "display": "Liver normal"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Spleen not palpable</div>"
-                },
-                "id": "uzsdgnldkx",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "271738005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Spleen not palpable"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Small liver</div>"
-                },
-                "id": "quinirifku",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "300325003",
-                            "system": "http://snomed.info/sct",
-                            "display": "Small liver"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129435009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Percussion - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - ascites not demonstrated </div>"
-                },
-                "id": "qxrvazeeyj",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "163310006",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - ascites not demonstrated "
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129435009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Percussion - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - caput medusae  </div>"
-                },
-                "id": "docalyrehx",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "163055009",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - caput medusae  "
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - bowel sounds normal</div>"
-                },
-                "id": "tadfkgettr",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "163339006",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - bowel sounds normal"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129436005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Auscultation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>On examination - no arterial bruit</div>"
-                },
-                "id": "nlybaubjmc",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "163045005",
-                            "system": "http://snomed.info/sct",
-                            "display": "On examination - no arterial bruit"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302553009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire abdomen"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129436005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Auscultation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Empty rectum</div>"
-                },
-                "id": "hqjriiuaab",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "249599008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Empty rectum"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243990009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire perineum"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Normal sized prostate (finding)</div>"
-                },
-                "id": "xddmdkwyor",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "300531004",
-                            "system": "http://snomed.info/sct",
-                            "display": "Normal sized prostate (finding)"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243990009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire perineum"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "hsohzrzxfr",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243928005",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire body region"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "cossebhwgu",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "182245002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire upper limb"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "cayxvcjckb",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302551006",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire thorax"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "wstxgcxsvh",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302539009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire hand"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "vwnfrjgobc",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "302539009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire hand"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129433002",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inspection - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
-                },
-                "id": "hyokyvuccs",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "281900007",
-                            "system": "http://snomed.info/sct",
-                            "display": "No abnormality detected"
-                        }
-                    ]
-                },
-                "bodySite": {
-                    "coding": [
-                        {
-                            "code": "243990009",
-                            "system": "http://snomed.info/sct",
-                            "display": "Entire perineum"
-                        }
-                    ]
-                },
-                "method": {
-                    "coding": [
-                        {
-                            "code": "129434008",
-                            "system": "http://snomed.info/sct",
-                            "display": "Palpation - action"
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Oriented to person, time and place</div>"
-                },
-                "id": "fkuukxtavx",
-                "subject": {
-                    "reference": "Patient/blah"
-                },
-                "status": "registered",
-                "code": {
-                    "coding": [
-                        {
-                            "code": "426224004",
-                            "system": "http://snomed.info/sct",
-                            "display": "Oriented to person, time and place"
+                            "display": "alert"
                         }
                     ]
                 },
@@ -1155,9 +48,1075 @@
                 "resourceType": "Observation",
                 "text": {
                     "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>oriented to time, place and person</div>"
+                },
+                "id": "jyrwmhxlew",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "426224004",
+                            "system": "http://snomed.info/sct",
+                            "display": "oriented to time, place and person"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "18427003",
+                            "system": "http://snomed.info/sct",
+                            "display": "Mental status determination"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>afebrile</div>"
+                },
+                "id": "utrjphxofp",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "86699002",
+                            "system": "http://snomed.info/sct",
+                            "display": "afebrile"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "410188000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Assess vital signs"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>HR:90, RR: 20, sitting BP: 90/70, Temp: 36.9</div>"
+                },
+                "id": "vhgghlycjc",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72970002",
+                            "system": "http://snomed.info/sct",
+                            "display": "HR:90, RR: 20, sitting BP: 90/70, Temp: 36.9"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "410188000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Assess vital signs"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>slightly overweight</div>"
+                },
+                "id": "xghoskucbd",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "238131007",
+                            "system": "http://snomed.info/sct",
+                            "display": "slightly overweight"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>moderate loss of muscle bulk</div>"
+                },
+                "id": "grqgugxsja",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "300043006",
+                            "system": "http://snomed.info/sct",
+                            "display": "moderate loss of muscle bulk"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>pale</div>"
+                },
+                "id": "bmtzizwzmr",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "274643008",
+                            "system": "http://snomed.info/sct",
+                            "display": "pale"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>not jaundiced</div>"
+                },
+                "id": "txhnblujuu",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "297952003",
+                            "system": "http://snomed.info/sct",
+                            "display": "not jaundiced"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no rash</div>"
+                },
+                "id": "agxsdlbovw",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "162693008",
+                            "system": "http://snomed.info/sct",
+                            "display": "no rash"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>multiple spider naevi on chest</div>"
+                },
+                "id": "ewdsbipwel",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "195382003",
+                            "system": "http://snomed.info/sct",
+                            "display": "multiple spider naevi on chest"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302551006",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire thorax"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no tenderness</div>"
+                },
+                "id": "bdxzbhserq",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "297125009",
+                            "system": "http://snomed.info/sct",
+                            "display": "no tenderness"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no masses</div>"
+                },
+                "id": "gbanfwntfi",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "163279004",
+                            "system": "http://snomed.info/sct",
+                            "display": "no masses"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no hepatomegaly</div>"
+                },
+                "id": "imdwscuomy",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "300337001",
+                            "system": "http://snomed.info/sct",
+                            "display": "no hepatomegaly"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no splenomegaly</div>"
+                },
+                "id": "fxbuzlfwiv",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "271738005",
+                            "system": "http://snomed.info/sct",
+                            "display": "no splenomegaly"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>liver span slightly reduced to percussion (approx. 6cm at mid-clavicular line)</div>"
+                },
+                "id": "pmqiocrzwg",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "300325003",
+                            "system": "http://snomed.info/sct",
+                            "display": "liver span slightly reduced to percussion (approx. 6cm at mid-clavicular line)"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129435009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Percussion - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no ascites demonstrated</div>"
+                },
+                "id": "quwuxiecja",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "163310006",
+                            "system": "http://snomed.info/sct",
+                            "display": "no ascites demonstrated"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129435009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Percussion - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>prominent veins visible around umbilicus (caput medusa)</div>"
+                },
+                "id": "axsobrqsol",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "163055009",
+                            "system": "http://snomed.info/sct",
+                            "display": "prominent veins visible around umbilicus (caput medusa)"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>bowel sounds normal</div>"
+                },
+                "id": "kgcixqzxzq",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "163339006",
+                            "system": "http://snomed.info/sct",
+                            "display": "bowel sounds normal"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129436005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Auscultation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no bruit</div>"
+                },
+                "id": "aahtzzsvjs",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "163045005",
+                            "system": "http://snomed.info/sct",
+                            "display": "no bruit"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302553009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire abdomen"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129436005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Auscultation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>lower rectum empty of faeces</div>"
+                },
+                "id": "mcsymullnr",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "249599008",
+                            "system": "http://snomed.info/sct",
+                            "display": "lower rectum empty of faeces"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243990009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire perineum"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>prostate feels normal</div>"
+                },
+                "id": "obzjjtmrwd",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "300531004",
+                            "system": "http://snomed.info/sct",
+                            "display": "prostate feels normal"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243990009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire perineum"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no bruises</div>"
+                },
+                "id": "otmlqxrbjj",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no bruises"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243928005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire body region"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no peripheral oedema</div>"
+                },
+                "id": "zelkbcvnww",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no peripheral oedema"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "182245002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire upper limb"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no gynaecomastia</div>"
+                },
+                "id": "xnrvfmdstl",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no gynaecomastia"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302551006",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire thorax"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no palmar erythema</div>"
+                },
+                "id": "ctjtxryudz",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no palmar erythema"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302539009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire hand"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no Dupuytren's contracture</div>"
+                },
+                "id": "odyymfpbkc",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no Dupuytren's contracture"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "302539009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire hand"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129433002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Inspection - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>no blood on the glove</div>"
+                },
+                "id": "gojjqjsfuf",
+                "subject": {
+                    "reference": "Patient/blah"
+                },
+                "status": "registered",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "281900007",
+                            "system": "http://snomed.info/sct",
+                            "display": "no blood on the glove"
+                        }
+                    ]
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "code": "243990009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Entire perineum"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "129434008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Palpation - action"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "text": {
+                    "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "pvwcnzykll",
+                "id": "kdhqmuhxgu",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1198,7 +1157,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "obfvnieijk",
+                "id": "cfqmvthiqx",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1239,7 +1198,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ssiswcmsoc",
+                "id": "kugmemgjmv",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1280,7 +1239,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "jvsrbffksi",
+                "id": "qpwmqopatr",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1321,7 +1280,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "dvpdgetryk",
+                "id": "mxnaajotqd",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1362,7 +1321,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "qvyhuukyru",
+                "id": "ciurmterif",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1403,7 +1362,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "uuvdagnpti",
+                "id": "eeshgagdaf",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1444,7 +1403,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "qdglcmfzix",
+                "id": "tsddnlqyvm",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1485,7 +1444,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "onfdxwygix",
+                "id": "dlcrnbbaid",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1526,7 +1485,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "dtzxcnkvhe",
+                "id": "jqmkjwrrzv",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1567,7 +1526,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "nhiqtxptcu",
+                "id": "dfuqzaaelj",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1608,7 +1567,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "zgmwndrvif",
+                "id": "syntprjqis",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1649,7 +1608,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "lnrxrrozyb",
+                "id": "mizkhlrfpt",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1690,7 +1649,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "vdljyrgzsp",
+                "id": "ixoxsafreo",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1731,7 +1690,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "kqkbqvglam",
+                "id": "cpwkdsqifv",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1772,7 +1731,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "nlkzfbywsq",
+                "id": "grzvvyeqpj",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1813,7 +1772,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "azsmtlqqyc",
+                "id": "jsykebyufd",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1854,7 +1813,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ezardarvkp",
+                "id": "irvpxdqazt",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1895,7 +1854,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ocjgyhgrll",
+                "id": "gbbbugpfbi",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1936,7 +1895,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "onvdkpkmfv",
+                "id": "wfrlbxmrih",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -1977,7 +1936,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "sugbahfbat",
+                "id": "tvwyoikktp",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2018,7 +1977,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ahmihjbojv",
+                "id": "tfzdwjinfy",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2059,7 +2018,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "aokxvhlnxg",
+                "id": "fdqdfjvsub",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2100,7 +2059,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "rkeilboaqx",
+                "id": "nfonwtutpy",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2141,7 +2100,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "taqoioejzn",
+                "id": "ywttrcfslk",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2182,7 +2141,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "rastbfrjjr",
+                "id": "ajkbxriqmp",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2223,7 +2182,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "xipufmkgua",
+                "id": "pqmfskefrz",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2264,7 +2223,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "xrlhveukpj",
+                "id": "rbmhagwojr",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2305,7 +2264,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ggrmiuiqlj",
+                "id": "pfoumvbnmb",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2346,7 +2305,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "beaekeytex",
+                "id": "ybpogzesii",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2387,7 +2346,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "aoacmyymex",
+                "id": "rtfzsuiwtx",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2428,7 +2387,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "vbqcmauvcn",
+                "id": "fppzyzdlfq",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2469,7 +2428,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "gixckdbmqa",
+                "id": "isdczdvpeq",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2510,7 +2469,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "wayyekjrwq",
+                "id": "gdjhhydedq",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2551,7 +2510,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "votxtbtion",
+                "id": "mvtduvdlqs",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2592,7 +2551,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "vzwshiqeoh",
+                "id": "jjkjkjrzie",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2633,7 +2592,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "dnlygioaxb",
+                "id": "fehzprhnai",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2674,7 +2633,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "yxbtfvtohr",
+                "id": "lzzepmphmz",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2715,7 +2674,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "qqlaunvypv",
+                "id": "qmidxcxxag",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2756,7 +2715,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "sgxqangpwt",
+                "id": "dlecrymsdv",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2797,7 +2756,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "bbnfgihlkv",
+                "id": "dvsqmdhjvt",
                 "subject": {
                     "reference": "Patient/blah"
                 },
@@ -2838,7 +2797,7 @@
                     "status": "generated",
                     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>No abnormality detected</div>"
                 },
-                "id": "ongdgdfipa",
+                "id": "tyugohgrcw",
                 "subject": {
                     "reference": "Patient/blah"
                 },
