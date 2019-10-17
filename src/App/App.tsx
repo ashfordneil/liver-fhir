@@ -15,8 +15,8 @@ const App: React.FC = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-      getExaminations().then(({examinations, examinationOptions}) => {
-          const initExaminations = InitExaminations(examinations, examinationOptions);
+      getExaminations().then(({examinations}) => {
+          const initExaminations = InitExaminations(examinations);
           dispatch(initExaminations);
       });
   });

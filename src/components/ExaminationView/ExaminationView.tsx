@@ -4,17 +4,24 @@ import { useSelector } from '../../store';
 import {default as ExaminationOption, ExaminationOptionProps} from '../ExaminationOption/ExaminationOption';
 import {BodyPart, Examination} from "../../store/state";
 
+interface FindingProps {
+  result: string;
+  method: string;
+  bodyPart: BodyPart;
+  timeDone: number;
+};
+
 interface ExaminationViewProps {
     selectedBodyPart: BodyPart;
     optionProps: ExaminationOptionProps[];
-    findings: Examination[];
+    findings: FindingProps[];
 };
 
-const Finding: React.FC<Examination> = (props) => {
+const Finding: React.FC<FindingProps> = (props) => {
   return (
     <div className={css.Finding}>
       <h3 className={css.Finding__Result}>
-        {props.result.text}
+        {props.result}
       </h3>
       <div className={css.Finding__Metadata}>
         {props.method} ({props.bodyPart})
@@ -45,16 +52,31 @@ const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
 
 const ExaminationView: React.FC = () => {
     const selectedBodyPart = useSelector(state => state.body);
-    const examinations = useSelector(state => state.examinations);
+    const examinationsOptions = useSelector(state => state.examinations);
     const completedExaminations = useSelector(state => state.completedExaminations);
-    const examinationOptions = useSelector(state => state.examinationOptions[state.body]);
 
-    const findings = completedExaminations.flatMap(e => examinations[e]);
-    const optionProps = examinationOptions.map(e => ({
-        text: examinations[e][0].name,
-        disabled: completedExaminations.indexOf(e) !== -1 || undefined,
-        examinationId: e,
-        cost: examinations[e][0].cost,
+    const findings = Object.keys(completedExaminations).flatMap((bodyPart: string) => {
+      const methods = completedExaminations[bodyPart as BodyPart];
+      return methods.flatMap(([m, timeDone]) => {
+        return examinationsOptions[bodyPart as BodyPart][m].results.flatMap((observation) => {
+          return {
+            result: observation.text,
+            method: m,
+            bodyPart: bodyPart as BodyPart,
+            timeDone
+          }
+        });
+      });
+    });
+
+    // Sort by time done, newest at the top
+    findings.sort((a, b) => b.timeDone - a.timeDone);
+
+    const optionProps = Object.keys(examinationsOptions[selectedBodyPart]).map(method => ({
+        text: method,
+        disabled: completedExaminations[selectedBodyPart].map(([m, t]) => m).indexOf(method) !== -1 || undefined,
+        method: method,
+        cost: examinationsOptions[selectedBodyPart][method].cost,
     }));
     return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings}></ExaminationViewRaw>
 }

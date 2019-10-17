@@ -54,57 +54,39 @@ export const getExaminations = async () => {
     const entriesWithBody = blah.entry.filter(
         (e) => e.resource.bodySite && bodyPartCodeLookup[e.resource.bodySite.coding[0].code] && e.resource.method && e.resource.code
     );
-    // To reach the deadline we will group bodypart / method combos under the same ID
-    const hackLookup: {[key in BodyPart]: {[key: string]: ExaminationId}} = {
-        Head: {},
-        Eyes: {},
-        Nose: {},
-        Chest: {},
-        Abdomen: {},
-        Arms: {},
-        Hands: {},
-        Pelvis: {},
-        Legs: {},
-        Feet: {},
-        "Entire Body": {},
-    };
-    const examinations: {[key in ExaminationId]: Examination[]} = {};
-    const examinationOptions: {[key in BodyPart]: ExaminationId[]} = {
-        Head: [],
-        Eyes: [],
-        Nose: [],
-        Chest: [],
-        Abdomen: [],
-        Arms: [],
-        Hands: [],
-        Pelvis: [],
-        Legs: [],
-        Feet: [],
-        "Entire Body": []
+    const examinations: {[key in BodyPart]: {[key: string]: Examination}} = {
+      Head: {},
+      Eyes: {},
+      Nose: {},
+      Chest: {},
+      Abdomen: {},
+      Arms: {},
+      Hands: {},
+      Pelvis: {},
+      Legs: {},
+      Feet: {},
+      "Entire Body": {},
     };
     entriesWithBody.forEach((e) => {
         const method = e.resource.method!.coding[0].display;
         const bodyPart = bodyPartCodeLookup[e.resource.bodySite!.coding[0].code];
-        if (hackLookup[bodyPart][method] == null) {
-            hackLookup[bodyPart][method] = e.resource.id;
-            examinations[e.resource.id] = [];
-            examinationOptions[bodyPart].push(e.resource.id);
+
+        if (examinations[bodyPart][method] == undefined) {
+          examinations[bodyPart][method] = {
+            name: method,
+            results: [],
+            cost: {
+              money: 0,
+              time: getTime(e) || 60
+            }
+          };
         }
 
-        const id = hackLookup[bodyPart][method];
-        examinations[id].push({
-              name: e.resource.method!.coding[0].display,
-              result: {
-                  text: e.resource.code!.coding[0].display,
-              },
-              cost: {
-                  money: 0,
-                  time: getTime(e) || 60
-              },
-              bodyPart,
-              method,
+        const examination = examinations[bodyPart][method];
+        examination.results.push({
+          text: e.resource.code!.coding[0].display
         });
     });
 
-  return {examinations, examinationOptions};
+  return {examinations};
 };
