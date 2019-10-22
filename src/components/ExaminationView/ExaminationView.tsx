@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlaceholder from 'react-placeholder';
 import css from './ExaminationView.module.css';
 import { useSelector } from '../../store';
 import {default as ExaminationOption, ExaminationOptionProps} from '../ExaminationOption/ExaminationOption';
@@ -13,6 +14,7 @@ interface FindingProps {
 
 interface ExaminationViewProps {
     selectedBodyPart: BodyPart;
+    ready: boolean;
     optionProps: ExaminationOptionProps[];
     findings: FindingProps[];
 };
@@ -36,11 +38,13 @@ const ExaminationViewRaw: React.FC<ExaminationViewProps> = (props) => {
         <div className={css.ExaminationView}>
             <div className={css.Header}>{props.selectedBodyPart} - Examinations</div>
             <div className={css.ExaminationOptionList}>
-                {props.optionProps.map((p, i) => (
-                  <div key={i} className={css.ExaminationOptionWrapper}>
-                    <ExaminationOption {...p} />
-                  </div>
-                ))}
+                <ReactPlaceholder ready={props.ready} type='rect' style={{width: 140, height: 100}}>
+                  {props.optionProps.map((p, i) => (
+                    <div key={i} className={css.ExaminationOptionWrapper}>
+                      <ExaminationOption {...p} />
+                    </div>
+                  ))}
+                </ReactPlaceholder>
             </div>
             <div className={css.Header}>Findings</div>
             <div className={css.Findings}>
@@ -54,6 +58,7 @@ const ExaminationView: React.FC = () => {
     const selectedBodyPart = useSelector(state => state.body);
     const examinationsOptions = useSelector(state => state.examinations);
     const completedExaminations = useSelector(state => state.completedExaminations);
+    const ready = useSelector(state => state.initialised);
 
     const findings = Object.keys(completedExaminations).flatMap((bodyPart: string) => {
       const methods = completedExaminations[bodyPart as BodyPart];
@@ -78,7 +83,7 @@ const ExaminationView: React.FC = () => {
         method: method,
         cost: examinationsOptions[selectedBodyPart][method].cost,
     }));
-    return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings}></ExaminationViewRaw>
+    return <ExaminationViewRaw selectedBodyPart={selectedBodyPart} optionProps={optionProps} findings={findings} ready={ready}></ExaminationViewRaw>
 }
 
 export default ExaminationView;

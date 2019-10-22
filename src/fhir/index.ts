@@ -1,4 +1,5 @@
-import blah from './hardcoded.json';
+// import blah from './hardcoded.json';
+import FHIR from 'fhirclient';
 import {BodyPart, Examination, ExaminationId} from "../store/state";
 
 const bodyPartCodeLookup: {[key: string]: BodyPart} = {
@@ -49,9 +50,37 @@ const getTime = (examination: any): number | undefined => {
   }
 }
 
+// FHIR Types, there are more attributes, but we don't care about them
+interface ObservationResult {
+  resource: {
+    code: {
+      coding: [{
+        display: string
+      }],
+    },
+    bodySite: {
+      coding: [{
+        code: string
+      }],
+    },
+    method: {
+      coding: [{
+        display: string
+      }]
+    }
+  }
+}
+
+interface ObservationQueryResult {
+  entry: ObservationResult[];
+}
+
 // Get examinations from fhir
 export const getExaminations = async () => {
-    const entriesWithBody = blah.entry.filter(
+    const client = await FHIR.oauth2.ready();
+    const result: ObservationQueryResult = await client.request("Observation?subject=270");
+    console.log("Requested");
+    const entriesWithBody = result.entry.filter(
         (e) => e.resource.bodySite && bodyPartCodeLookup[e.resource.bodySite.coding[0].code] && e.resource.method && e.resource.code
     );
     const examinations: {[key in BodyPart]: {[key: string]: Examination}} = {

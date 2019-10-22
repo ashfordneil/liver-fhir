@@ -34,6 +34,7 @@ export interface Examination {
 }
 
 interface State {
+  initialised: boolean;
   body: BodyPart;
   points: Points;
   // A lookup of body part -> method -> examination
@@ -49,6 +50,7 @@ interface State {
 }
 
 export const defaultState: State = {
+  initialised: false,
   body: "Entire Body",
   points: {
     moneySpent: 0,

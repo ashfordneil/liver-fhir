@@ -1,3 +1,9 @@
+"""
+Takes an excel file and returns a JSON you can send to the FHIR server
+1. Create a patient, this uses id=270
+2. Clear previous observations: DELETE https://uat.csiro.au/fhirServer/fhir/Observation?subject=270
+3. Send new observations: POST https://uat.csiro.au/fhirServer/fhir/ (body is the contents of out.json)
+"""
 import json
 import sys
 import random
@@ -11,14 +17,14 @@ NAD_SHEET = "NAD Patient"
 
 
 def random_id():
-    return ''.join(random.choice(string.ascii_lowercase) for i in range(10))
+    return 'pe-' + ''.join(random.choice(string.ascii_lowercase) for i in range(10))
 
 def generate_bundle():
     return dict(
         resourceType="Bundle",
-        type="collection",
+        type="batch",
         entry=[],
-        id="cf-1569511612518",  # TODO - generate?
+        id=random_id(),
     )
 
 
@@ -33,7 +39,7 @@ def generate_observation(row: dict) -> dict:
             ),
             id=random_id(),
             subject=dict(
-                reference="Patient/blah"
+                reference="Patient/270"
             ),
             status="registered",
             code=dict(
@@ -56,7 +62,10 @@ def generate_observation(row: dict) -> dict:
                     system="http://snomed.info/sct",
                     display=row['QV Description']
                 )]
-            ),
+            )
+        ),
+        request=dict(
+            method='POST'
         )
     )
 

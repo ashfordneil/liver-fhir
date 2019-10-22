@@ -31,6 +31,7 @@ const rootReducer = (state: State = defaultState, action: Action): State => {
     case INIT_EXAMINATIONS:
       return {
         ...state,
+        initialised: true,
         examinations: {
           ...state.examinations,
           ...action.examinations
