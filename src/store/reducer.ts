@@ -36,6 +36,10 @@ const rootReducer = (state: State = defaultState, action: Action): State => {
           ...state.examinations,
           ...action.examinations
         },
+        observations: {
+          ...state.observations,
+          ...action.observations
+        }
       };
     default:
       console.warn("Unhandled action:", action);

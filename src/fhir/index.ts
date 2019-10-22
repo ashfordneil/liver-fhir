@@ -1,6 +1,6 @@
 // import blah from './hardcoded.json';
 import FHIR from 'fhirclient';
-import {BodyPart, Examination, ExaminationId} from "../store/state";
+import {BodyPart, Examination, ObservationId} from "../store/state";
 
 const bodyPartCodeLookup: {[key: string]: BodyPart} = {
     "243990009": "Pelvis",
@@ -53,6 +53,7 @@ const getTime = (examination: any): number | undefined => {
 // FHIR Types, there are more attributes, but we don't care about them
 interface ObservationResult {
   resource: {
+    id: ObservationId,
     code: {
       coding: [{
         display: string
@@ -96,6 +97,7 @@ export const getExaminations = async () => {
       Feet: {},
       "Entire Body": {},
     };
+    const observations: {[key in ObservationId]: any} = {};
     entriesWithBody.forEach((e) => {
         const method = e.resource.method!.coding[0].display;
         const bodyPart = bodyPartCodeLookup[e.resource.bodySite!.coding[0].code];
@@ -113,9 +115,15 @@ export const getExaminations = async () => {
 
         const examination = examinations[bodyPart][method];
         examination.results.push({
+          id: e.resource.id,
           text: e.resource.code!.coding[0].display
         });
+
+        observations[e.resource.id] = {
+          resource: e.resource,
+          resourceType: "Observation"
+        };
     });
 
-  return {examinations};
+  return {examinations, observations};
 };

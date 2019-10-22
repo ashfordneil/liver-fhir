@@ -1,4 +1,4 @@
-import {BodyPart, Examination, ExaminationId} from './state';
+import {BodyPart, Examination, ObservationId} from './state';
 
 export const SELECT_BODY_PART = 'SELECT_BODY_PART';
 export const SelectBodyPart = (part: BodyPart) => ({
@@ -22,9 +22,11 @@ export const SelectMethod = (method: string) => ({
 export const INIT_EXAMINATIONS = 'INIT_EXAMINATIONS';
 export const InitExaminations = (
     examinations: {[key in BodyPart]: {[key: string]: Examination}},
+    observations: {[key in ObservationId]: any}
     ) => ({
   type: INIT_EXAMINATIONS as typeof INIT_EXAMINATIONS,
   examinations,
+  observations
 });
 
 type Action =

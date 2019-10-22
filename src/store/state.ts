@@ -19,11 +19,12 @@ export interface Points {
   timePassed: number;
 }
 
+export type ObservationId = string;
 export interface Observation {
   text: string;
+  id: ObservationId;
 }
 
-export type ExaminationId = string;
 export interface Examination {
   name: string;
   cost: {
@@ -37,6 +38,9 @@ interface State {
   initialised: boolean;
   body: BodyPart;
   points: Points;
+  observations: {
+    [key in ObservationId]: any
+  };
   // A lookup of body part -> method -> examination
   examinations: {
     [key in BodyPart]: {
@@ -56,6 +60,7 @@ export const defaultState: State = {
     moneySpent: 0,
     timePassed: 0,
   },
+  observations: {},
   examinations: {
     Head: {},
     Eyes: {},
