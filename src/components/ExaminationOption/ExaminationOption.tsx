@@ -37,7 +37,7 @@ const ExaminationOption: React.FC<ExaminationOptionProps> = (props) => {
             meta: undefined,
             request: {method: "POST"}
           })).map(o => client.create(o)));
-        });
+        }).catch(console.warn);
         const event = SelectMethod(props.method);
         dispatch(event);
       }}

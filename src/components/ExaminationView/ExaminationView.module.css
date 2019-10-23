@@ -31,10 +31,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 15rem);
     grid-gap: 1rem;
+
 }
 
 .Finding {
   border: 1px solid #aaa;
+  padding: 1rem;
 }
 
 .Finding__Metadata {
