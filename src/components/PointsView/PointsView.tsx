@@ -11,9 +11,14 @@ interface PointsViewProps {
 
 // Performs actual rendering for PointsView components
 export const PointsViewRaw: React.FC<PointsViewProps> = (props) => {
+    const className =
+    props.timePassed < 12 * 60 ? css.good
+    : props.timePassed < 15 * 60 ? css.medium
+    : css.bad;
+
     return <div className={css.PointsView}>
-        {/*<div className={css.Header}>Money</div><div>${formatNumber(props.moneySpent)}</div>*/}
-        <div className={css.Header}>Time</div><div>{formatDuration(props.timePassed)}</div>
+      <div className={css.Header}>Time</div>
+      <div className={className}>{formatDuration(props.timePassed)}</div>
     </div>;
 }
 

@@ -14,3 +14,15 @@
     background-color: #ccc;
     padding-right: 2rem;
 }
+
+.good {
+  background-color: lightgreen;
+}
+
+.medium {
+  background-color: yellow;
+}
+
+.bad {
+  background-color: red;
+}
